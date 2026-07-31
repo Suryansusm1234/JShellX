@@ -7,7 +7,7 @@ public class Main {
             System.out.print("$ ");
         String input =  sc.next();
         if (input.length() != 0){
-           System.out.println(input + ": command not found"+ "\n" );
+           System.out.println(input + ": command not found" );
        }
         }
 
