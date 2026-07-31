@@ -17,7 +17,10 @@ public class Main {
        }else{  
         if (input.startsWith("echo")) {
             Echofunction(input);
+        }else{
+            System.out.println(input+": "+ "command not found");
         }
+
        }
         }
 
