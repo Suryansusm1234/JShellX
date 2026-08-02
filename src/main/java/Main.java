@@ -10,17 +10,16 @@ public class Main {
         if (input.equals("exit")){
            break;
        }else{  
-       String GC = input.substring(0,4);
-       switch (GC) {
+       String[] GC = input.split(" ",2);
+       switch (GC[0]) {
         case "echo":
-            Echo.echo(input);
+            Echo.echo(GC[1]);
             break;
         case "type":
-        input = input.replace("type ", "");
-        Type.type(input);
+        Type.type(GC[1]);
         break;
         default:
-            System.out.println(input+": command not found");
+            ShellProcess.find(GC[0] , GC[1]);
             break;
        }
 
