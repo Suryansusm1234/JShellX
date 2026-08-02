@@ -18,6 +18,9 @@ public class Main {
         case "type":
         Type.type(GC[1]);
         break;
+        case "pwd":
+            PresentDIR.getwworkingDIR();
+            break;
         default:
             ShellProcess.find(GC[0] , GC[1]);
             break;
